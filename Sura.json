@@ -1,0 +1,22 @@
+{
+  "uzb_alauddinmansour": {
+    "name": "uzb-alauddinmansour",
+    "author": "Alauddin Mansour",
+    "language": "Uzbek",
+    "direction": "ltr",
+    "source": "https://quranenc.com/check/uzbek_mansour/v1.0.0-csv.1 , https://quranenc.com/en/browse/uzbek_mansour , https://quranenc.com ,",
+    "comments": "",
+    "link": "https://cdn.jsdelivr.net/gh/fawazahmed0/quran-api@1/editions/uzb-alauddinmansour.json",
+    "linkmin": "https://cdn.jsdelivr.net/gh/fawazahmed0/quran-api@1/editions/uzb-alauddinmansour.min.json"
+  },
+  "uzb_muhammadsodikmu": {
+    "name": "uzb-muhammadsodikmu",
+    "author": "Muhammad Sodik Muhammad Yusuf",
+    "language": "Uzbek",
+    "direction": "ltr",
+    "source": "http://tanzil.net",
+    "comments": "",
+    "link": "https://cdn.jsdelivr.net/gh/fawazahmed0/quran-api@1/editions/uzb-muhammadsodikmu.json",
+    "linkmin": "https://cdn.jsdelivr.net/gh/fawazahmed0/quran-api@1/editions/uzb-muhammadsodikmu.min.json"
+  }
+}

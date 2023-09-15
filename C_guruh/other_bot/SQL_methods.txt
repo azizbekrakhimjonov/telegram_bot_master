@@ -1,0 +1,47 @@
+--berilgan shaharda va shu yosh oraligida gi data ni chiqar
+SELECT * FROM Person p WHERE p.Address like "N%" AND p.Age>10 
+
+--berilgan belgi bilan boshlangan malumotlarni chiqarish
+-- SELECT * FROM Person p WHERE p.Name like "A%";
+-- SELECT * FROM Person p WHERE p.Name like "%a%";
+
+-- malumotlar soni
+SELECT count(*) as Soni FROM Person p
+
+-- Korinishni ozimizga moslab korish 
+SELECT p.Name as UserName, p.Age as User_Age FROM Person p
+
+
+--Name boyicha sort qilib beradi
+SELECT * FROM Person p ORDER by p.Name ASC;
+--buni teskaisi
+-- SELECT * FROM Person p ORDER by p.Name DESC;
+
+
+--malumotni yangilash
+UPDATE Person SET Name="Alisher Navoiy", Age="50"
+WHERE Person.ID == 2
+
+-- malumot o`chirib tashlash
+DELETE FROM Person WHERE ID = 2;
+
+-- SELECT * FROM Work
+
+-- SELECT * FROM Work w INNER JOIN Person p
+-- WHERE w.person_id = p.Id
+
+SELECT * FROM Work w INNER JOIN Person p
+WHERE w.person_id = p.Id
+
+
+--berilgan belgi bilan boshlangan malumotlarni chiqarish
+-- SELECT * FROM Group_c p WHERE p.Name like "A%";
+
+-- oxirgi belgi orqali chiqarish
+-- SELECT * FROM Group_c p WHERE p.name like "%n";
+
+-- bosh va ohirgi harf orqali chiqarish
+-- SELECT * FROM Group_c  p WHERE p.name like "A%k" 
+
+-- orasidagi harf orqali malumotlani chiqarish
+SELECT * FROM Group_c  p WHERE p.name like "%o%" 
