@@ -40,7 +40,7 @@ async def cm_start(message: types.Message):
 
 
 @dp.message_handler(content_types=['photo'], state=FSMAdmin.photo)
-async def load_photo(message: types.Message, state: FSMContext):
+async def load_photo(message: types.Message, state: `FSMContext`):
     # if message.from_user.id == ID:
         async with state.proxy() as data:
             data['photo'] = message.photo[0].file_id
